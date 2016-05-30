@@ -1,3 +1,8 @@
+参考：
 https://docs.docker.com/linux/
+http://docker.widuu.com
 
-https://docs.docker.com/linux/step_one/
+#安装
+#在 CentOS-6.5 中，Docker 包含在 Extra Packages for Enterprise Linux (EPEL) 提供的镜像源中，
+#该组织致力于为 RHEL 发行版创建和维护更多可用的软件
+yum install epel-release
