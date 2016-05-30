@@ -3,6 +3,25 @@ https://docs.docker.com/linux/
 http://docker.widuu.com
 
 #安装
+
 #在 CentOS-6.5 中，Docker 包含在 Extra Packages for Enterprise Linux (EPEL) 提供的镜像源中，
-#该组织致力于为 RHEL 发行版创建和维护更多可用的软件
-yum install epel-release
+#安装 EPEL 镜像源
+$ yum install epel-release
+#卸载 docker 包
+$ sudo yum -y remove docker
+#安装 docker-io 包
+$ sudo yum install docker-io
+
+#运行 Docker daemon
+
+#启动 docker 进程
+$ sudo service docker start
+# Docker 默认开机启动
+$ sudo docker images centos
+#下载最新的 centos 镜像
+$ sudo docker pull centos
+#查看镜像，确认镜像是否存在
+$ sudo docker images centos
+#测试镜像
+$ sudo docker run -i -t centos /bin/bash
+#如果正常运行，你将会获得一个简单的 bash 提示，输入 exit 来退出。
