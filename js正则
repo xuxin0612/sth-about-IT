@@ -1,3 +1,31 @@
 //test方法,测试字符串,符合模式时返回true,否则返回false
 var re = /he/; 
 alert(re.test('he'));
+
+//如果要大小写都匹配可以指定i标志(i是ignoreCase或case-insensitive的表示)
+re = /he/i; 
+
+//脱字符(^)代表字符开始位置
+re = /^he/i;
+
+//$表示字符结束位置
+re = /^he$/i;
+
+// \s匹配任何空白字符，包括空格、制表符、换页符等等 
+re = /\s/;
+
+//[]匹配指定范围内的任意字符,这里将匹配英文字母,不区分大小写  
+re=/^[a-z]/i;
+
+//当然,仅仅知道了字符串是否匹配模式还不够,我们还需要知道哪些字符匹配了模式 
+
+//另一个方法exec,返回一个数组,数组的第一个元素为完整的匹配内容 
+var osVersion = "Ubuntu 8";//其中的8表示系统主版本号  
+re=/^[a-z]+\s+\d+$/i; //+号表示字符至少要出现1次,\s表示空白字符,\d表示一个数字 
+arr = re.exec(osVersion);  
+alert(arr[0]);//将osVersion完整输出,因为整个字符串刚好匹配re  
+
+//我只需要取出数字  
+re=/\d+/;  
+var arr = re.exec(osVersion);  
+alert(arr[0]);//8  
