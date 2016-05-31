@@ -1,0 +1,3 @@
+//test方法,测试字符串,符合模式时返回true,否则返回false
+var re = /he/; 
+alert(re.test('he'));
