@@ -29,3 +29,6 @@ alert(arr[0]);//将osVersion完整输出,因为整个字符串刚好匹配re
 re=/\d+/;  
 var arr = re.exec(osVersion);  
 alert(arr[0]);//8  
+
+//8个数字
+var ss = /^\d{8}$/;
