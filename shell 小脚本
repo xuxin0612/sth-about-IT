@@ -1,0 +1,5 @@
+#按行读取文件
+for line in `cat filename(待读取的文件)`
+do
+echo $line
+done
