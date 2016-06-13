@@ -1,0 +1,5 @@
+#使用7z创建一个zip文件（To create an encrypted zip file with 7z archiver:）
+$ 7za a -tzip -pMY_SECRET -mem=AES256 secure.zip doc.pdf doc2.pdf doc3.pdf
+
+#解压缩加密文件(To uncompress a zip file that is encrypted with 7za command:)
+$ 7za e secure.zip
