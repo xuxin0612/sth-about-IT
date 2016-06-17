@@ -34,7 +34,11 @@ $ sudo docker ps -a
 $ sudo docker start pwc-mysql   //通过指定容器名字
 $ sudo docker start 73f8811f669e  //通过指定容器ID
 
-关闭命令：
+#关闭命令：
 
 $ sudo docker stop pwc-mysql   //通过指定容器名字
 $ sudo docker stop 73f8811f669e  //通过指定容器ID
+
+#删除镜像
+$ docker rmi -f 7d9495d03763
+$ docker rmi -f docker-whale
