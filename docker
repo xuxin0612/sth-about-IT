@@ -25,3 +25,16 @@ $ sudo docker images centos
 #测试镜像
 $ sudo docker run -i -t centos /bin/bash
 #如果正常运行，你将会获得一个简单的 bash 提示，输入 exit 来退出。
+
+#查看所有容器（启动状态或者关闭状态）
+$ sudo docker ps -a
+
+#启动命令：
+
+$ sudo docker start pwc-mysql   //通过指定容器名字
+$ sudo docker start 73f8811f669e  //通过指定容器ID
+
+关闭命令：
+
+$ sudo docker stop pwc-mysql   //通过指定容器名字
+$ sudo docker stop 73f8811f669e  //通过指定容器ID
