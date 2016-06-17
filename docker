@@ -17,7 +17,7 @@ $ sudo yum install docker-io
 #启动 docker 进程
 $ sudo service docker start
 # Docker 默认开机启动
-$ sudo docker images centos
+$ sudo chkconfig docker on
 #下载最新的 centos 镜像
 $ sudo docker pull centos
 #查看镜像，确认镜像是否存在
