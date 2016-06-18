@@ -57,3 +57,6 @@ $ docker rmi -f docker-whale
 #删除容器
 $ docker rm -f 7d9495d03763
 $ docker rm -f docker-whale
+
+#进入容器
+$ docker exec -it <container_id> /bin/bash
