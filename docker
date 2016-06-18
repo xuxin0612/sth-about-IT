@@ -27,13 +27,23 @@ $ sudo docker images centos
 $ sudo docker run -i -t centos /bin/bash
 #如果正常运行，你将会获得一个简单的 bash 提示，输入 exit 来退出。
 
+#查看运行容器
+$ sudo docker ps 
+
 #查看所有容器（启动状态或者关闭状态）
 $ sudo docker ps -a
+
+#创建容器命令：
+
+$ sudo docker create mysql   //通过指定镜像名字
+$ sudo docker create 73f8811f669e  //通过指定镜像ID
 
 #启动命令：
 
 $ sudo docker start pwc-mysql   //通过指定容器名字
 $ sudo docker start 73f8811f669e  //通过指定容器ID
+
+docker run = docker create & docker start
 
 #关闭命令：
 
@@ -43,3 +53,7 @@ $ sudo docker stop 73f8811f669e  //通过指定容器ID
 #删除镜像
 $ docker rmi -f 7d9495d03763
 $ docker rmi -f docker-whale
+
+#删除容器
+$ docker rm -f 7d9495d03763
+$ docker rm -f docker-whale
