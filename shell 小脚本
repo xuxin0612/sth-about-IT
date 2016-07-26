@@ -3,3 +3,7 @@ for line in `cat filename(待读取的文件)`
 do
 echo $line
 done
+
+#七天前的日期
+echo `date -d"-7 day" +%Y%m%d` 
+20151009
